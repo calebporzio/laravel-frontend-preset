@@ -13,4 +13,5 @@
 `php artisan preset calebporzio`
 
 Once finished, run the following command to properly run the build:
+
 `npm install && node_modules/.bin/tailwind init && npm run dev`
