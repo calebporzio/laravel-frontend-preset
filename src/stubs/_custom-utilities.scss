@@ -1,0 +1,31 @@
+// Globally remove the annoying outline when a button or input is clicked.
+input, button, button:focus {
+    outline: none;
+}
+
+// This class makes SVG icons more context-aware. There are 2 things going on here:
+// 1) "currentColor" fill allows you to set the color of the svg with a "color:" attribute.
+// 2) "1em" height and width size the SVG to the parent's font-size.
+// 3) the "vertical-align" and odd margin are adjustments to some specific and odd rendering behavior.
+.svg-icon {
+    fill: currentColor;
+    height: 1em;
+    margin-top: -4px;
+    vertical-align: middle;
+    width: 1em;
+}
+
+// Usage: "cloak:hiden", "cloak:inline-block"
+// To understand these helpers, replace the word "cloak" with:
+// "while Vue is loading on the page, set the element's display property to:"
+[v-cloak] .cloak\:hidden {
+    @apply .hidden;
+}
+
+[v-cloak] .cloak\:inline-block {
+    @apply .inline-block;
+}
+
+[v-cloak] .cloak\:block {
+    @apply .block;
+}

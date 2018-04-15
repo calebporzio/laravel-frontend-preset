@@ -1,0 +1,26 @@
+{
+    "name": "calebporzio/laravel-frontend-preset",
+    "description": "My personal frontend preset for new laravel applications.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caleb Porzio",
+            "email": "calebporzio@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CalebPorzio\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CalebPorzio\\LaravelPreset\\PresetServiceProvider"
+            ]
+        }
+    }
+}
