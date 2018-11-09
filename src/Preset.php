@@ -42,20 +42,20 @@ class Preset extends BasePreset
 
     protected static function bootstrapDotJs()
     {
-        copy(__DIR__ . '/stubs/bootstrap.js', resource_path('assets/js/bootstrap.js'));
+        copy(__DIR__ . '/stubs/bootstrap.js', resource_path('js/bootstrap.js'));
     }
 
     protected static function appDotScss()
     {
         $files = new Filesystem;
 
-        $files->makeDirectory(resource_path('assets/sass/components', 0755, true));
+        $files->makeDirectory(resource_path('sass/components', 0755, true));
 
-        $files->delete(resource_path('assets/sass/_variables.scss'));
+        $files->delete(resource_path('sass/_variables.scss'));
 
-        copy(__DIR__ . '/stubs/app.scss', resource_path('assets/sass/app.scss'));
-        copy(__DIR__ . '/stubs/_custom-utilities.scss', resource_path('assets/sass/_custom-utilities.scss'));
-        copy(__DIR__ . '/stubs/components/_button.scss', resource_path('assets/sass/components/_button.scss'));
+        copy(__DIR__ . '/stubs/app.scss', resource_path('sass/app.scss'));
+        copy(__DIR__ . '/stubs/_custom-utilities.scss', resource_path('sass/_custom-utilities.scss'));
+        copy(__DIR__ . '/stubs/components/_button.scss', resource_path('sass/components/_button.scss'));
     }
 
     protected static function views()
