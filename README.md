@@ -7,7 +7,7 @@
 - Replace stock welcome.blade.php with Tailwind friendly version
 
 ### Installation:
-`composer install calebporzio/laravel-frontend-preset`
+`composer require calebporzio/laravel-frontend-preset`
 
 ### Usage:
 `php artisan preset calebporzio`
